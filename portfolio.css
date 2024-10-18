@@ -43,6 +43,15 @@ nav a:hover::after {
     font-size: 2em;
     color: red;
   }
+
+
+ .over{
+    margin: 25px 0px 25px 0px;
+    background-color: black;
+    color: aliceblue;
+  }
+
+
   main{
     display: flex;
     flex-direction: row;
@@ -83,12 +92,6 @@ nav a:hover::after {
   }
 
 
-
-  .over{
-    margin: 25px 0px 0px 0px;
-    background-color: black;
-    color: aliceblue;
-  }
 
 
 
@@ -272,7 +275,7 @@ details{
 
 footer p{
   font-size: 2rem;
-  margin-bottom: 0px;
+  margin-bottom: -25px;
   padding: 30px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
