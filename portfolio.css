@@ -1,204 +1,211 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
-html{
-    scroll-behavior: smooth;
-}
-body{
-    text-align: center;
-    justify-content: center;
-    background-color: transparent;
-}
-header{
-    display: flex;
-    word-spacing: 30px;
-    text-align: left;
-    background-color: black;
-    color: aliceblue;
-    padding: 3rem;
-    
-}
-h2{
-    flex: 1;
-}
-h2,nav{
-    margin-right: 25px;
-}
-nav a{
-    text-transform: uppercase;
-    text-align: end;
-    text-decoration: none;
-    color: aliceblue;
-}
-nav a:hover::before {
-    content: "→ ";
-    color: orange;
-  }
-nav a:hover::after {
-    content: " ! ";
-    color: red;
-  }
-  p::first-letter {
-    font-size: 2em;
-    color: red;
-  }
-
-
- .over{
-    margin: 25px 0px 25px 0px;
-    background-color: black;
-    color: aliceblue;
-  }
-
-
-  main{
-    display: flex;
-    flex-direction: row;
-    margin: 25px 0px 25px 0px;
-    background-color: black;
-    color: aliceblue;
-
-  }
-  #main1{
-        flex: 2;
-        align-self: center;
-        text-align: left;
-        margin-left: 7rem;
-  }
-  #main2{
-    justify-content: center;
-    flex: 2;
-  }
-  #main2 img{
-    width: 500px;
-    height: 500px;
-    margin-bottom: 20px;
-    margin-right: 10rem;
-  }
-  #main1 span{
-    color:rgb(215, 204, 43);
-  }
-  #main1 input{
-    padding: 10px;
-    background-color: rgb(215, 204, 43);
-    border-radius: 15px;
-    width: 125px;
-    font-weight: bold;
-    font-size: 1rem;
-  }
-  #main1 input:hover{
-    background-color: aliceblue ;
-  }
-
-
-
-
-
-  #about{
-    display: flex;
-    flex-direction: row;
-  }
-  #about img{
-    width: 350px;
-    height: 350px;
-    margin-bottom: 15px;
-    margin-left: 35px;
-    padding-top: 40px;
-  }
-  #img{
-    justify-items: center;
-    margin-right: 3rem;
-    margin-right: 10rem;
-  }
-  #content{
-    padding: 50px;
-    padding-left: 82px;
-    text-align: left;
-    margin: 2px;
-  }
-
-
-
-  h1,figcaption{
-    text-transform: uppercase;
-  }
-
-
-
-
-  #education{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 0 4rem 6rem 4rem;
-  }
-  #edu1{
-    text-align: center;
-    margin: 1rem;
-    padding-top: 2.5rem;
-    margin-bottom: 4rem;
-  }
-  #edu2{
-
-    display: flex;
-    flex-direction: row;
-  }
-  .edu{
-    flex: 1.3;
-    text-transform: uppercase;
-    
-  }
-  .edu progress{
-    background: black;
-    width: 50%;
-    border-radius: 5px;
-    padding: 1px;
-  }
-progress::-webkit-progress-value {
-    background-color: rgb(215, 204, 43);
+* {
+  margin: 0;
+  padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
+body {
+  text-align: center;
+  justify-content: center;
+  background-color: transparent;
+}
 
-
-#skills{
+header {
   display: flex;
-  flex-direction: column;
-  padding:2rem;
+  word-spacing: 30px;
+  text-align: left;
+  background-color: black;
+  color: aliceblue;
+  padding: 3rem;
 }
-#skill2{
+
+h2 {
+  flex: 1;
+}
+
+h2,
+nav {
+  margin-right: 25px;
+}
+
+nav a {
+  text-transform: uppercase;
+  text-align: end;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+nav a:hover::before {
+  content: "→ ";
+  color: orange;
+}
+
+nav a:hover::after {
+  content: " ! ";
+  color: red;
+}
+
+p::first-letter {
+  font-size: 2em;
+  color: red;
+}
+
+main {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; /* Allows items to wrap to the next line */
-  justify-content: space-between; /* Adds spacing between items */
-/* Space between items */
+  margin: 25px 0;
+  background-color: black;
+  color: aliceblue;
 }
-#skill2 figure{
+
+#main1 {
+  flex: 2;
   align-self: center;
-  flex:1.3;
+  text-align: left;
+  margin-left: 7rem;
+}
+
+#main2 {
+  justify-content: center;
+  flex: 2;
+}
+
+#main2 img {
+  width: 500px;
+  height: 500px;
+  margin-bottom: 20px;
+  margin-right: 10rem;
+}
+
+#main1 span {
+  color: rgb(215, 204, 43);
+}
+
+#main1 input {
+  padding: 10px;
+  background-color: rgb(215, 204, 43);
+  border-radius: 15px;
+  width: 125px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#main1 input:hover {
+  background-color: aliceblue;
+}
+
+.over {
+  margin: 25px 0;
+  background-color: black;
+  color: aliceblue;
+}
+
+#about {
+  display: flex;
+  flex-direction: row;
+}
+
+#about img {
+  width: 350px;
+  height: 350px;
+  margin-bottom: 15px;
+  margin-left: 35px;
+  padding-top: 40px;
+}
+
+#img {
+  justify-items: center;
+  margin-right: 3rem;
+  margin-right: 10rem;
+}
+
+#content {
+  padding: 50px;
+  padding-left: 82px;
+  text-align: left;
+  margin: 2px;
+}
+
+h1,
+figcaption {
+  text-transform: uppercase;
+}
+
+#education {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 4rem 6rem 4rem;
+}
+
+#edu1 {
+  text-align: center;
+  margin: 1rem;
+  padding-top: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+#edu2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.edu {
+  flex: 1.3;
+  text-transform: uppercase;
+}
+
+.edu progress {
+  background: black;
+  width: 50%;
+  border-radius: 5px;
+  padding: 1px;
+}
+
+progress::-webkit-progress-value {
+  background-color: rgb(215, 204, 43);
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+#skill2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#skill2 figure {
+  align-self: center;
+  flex: 1.3;
   flex-wrap: wrap;
 }
-#skill2 img{
+
+#skill2 img {
   width: 150px;
   height: auto;
 }
-figure{
+
+figure {
   margin: 30px 60px 10px 50px;
   border: 2px solid white;
   padding: 30px;
   transition: 1s;
 }
-figure:hover{
+
+figure:hover {
   background-color: aliceblue;
   color: black;
 }
 
-
-
-
-
-#projects{
+#projects {
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -206,76 +213,176 @@ figure:hover{
   align-items: center;
 }
 
-#proj1{
+#proj1 {
   display: flex;
   flex-direction: column;
   text-align: left;
   align-self: flex-start;
   width: 45%;
 }
-#proj1 h1{
-  padding: 40px 0 20px 0px;
+
+#proj1 h1 {
+  padding: 40px 0 20px 0;
   text-align: center;
 }
-#proj1 a{
+
+#proj1 a {
   text-decoration: none;
   color: rgb(215, 204, 43);
 }
-details{
+
+details {
   margin: 2rem 0 1rem 0.5rem;
 }
-.details p,summary{
+
+.details p,
+summary {
   font-size: 1.4rem;
   max-width: fit-content;
   overflow: auto;
   float: inline-start;
-}
-#proj2{
-  width:45%;
+  text-justify: auto;
 }
 
+#proj2 {
+  width: 45%;
+}
 
-
-
-#contact{
+#contact {
   display: flex;
   flex-direction: row;
   text-align: center;
   margin: auto;
 }
-#contact1{
+
+#contact1 {
   margin-right: 6rem;
   justify-items: center;
   float: inline-end;
   justify-items: end;
 }
-#contact1 img{
+
+#contact1 img {
   float: inline-end;
   justify-items: end;
   margin: 0 4rem 1rem 6rem;
 }
-#contact2{
+
+#contact2 {
   padding: 50px;
   text-align: left;
   margin-left: 7rem;
 }
-#contact2 h1{
+
+#contact2 h1 {
   margin-bottom: 4rem;
 }
-#contact2 a{
+
+#contact2 a {
   text-decoration: none;
   color: rgb(215, 204, 43);
 }
-#contact2 li{
+
+#contact2 li {
   padding: 1rem;
   font-size: 1.3rem;
 }
 
-
-
-footer p{
+footer p {
   font-size: 2rem;
   margin-bottom: -25px;
   padding: 30px;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+  }
+
+  main {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #main1,
+  #main2 {
+      flex: 1; /* Make both sections take equal space */
+      margin-left: 0; /* Remove left margin */
+      margin-right: 0; /* Remove right margin */
+  }
+
+  #main2 img {
+      width: 100%; /* Make image responsive */
+      height: auto;
+      margin: 0; /* Remove margin */
+  }
+
+  #about {
+      flex-direction: column; /* Stack images and content */
+  }
+
+  #about img {
+      width: 100%; /* Make image responsive */
+      height: auto; /* Maintain aspect ratio */
+      margin-left: 0; /* Remove left margin */
+  }
+
+  #content {
+      padding-left: 0; /* Remove left padding */
+      padding-right: 0; /* Remove right padding */
+  }
+
+  #edu2 {
+      flex-direction: column; /* Stack education items */
+  }
+
+  .edu {
+      flex: 1; /* Make education items full width */
+      margin-bottom: 2rem; /* Add some margin */
+  }
+
+  #skills {
+      padding: 1rem; /* Reduce padding */
+  }
+
+  #skill2 {
+      flex-direction: column; /* Stack skill items */
+      align-items: center; /* Center items */
+  }
+
+  #skill2 figure {
+      width: 80%; /* Make skill items full width */
+      margin: 10px 0; /* Add margin */
+  }
+
+  #projects {
+      flex-direction: column; /* Stack project items */
+      align-items: center; /* Center items */
+  }
+
+  #proj1, #proj2 {
+      width: 100%; /* Make project sections full width */
+      margin-bottom: 2rem; /* Add margin */
+  }
+
+  #contact {
+      flex-direction: column; /* Stack contact items */
+      align-items: center; /* Center items */
+  }
+
+  #contact1 {
+      margin-right: 0; /* Remove right margin */
+  }
+
+  #contact2 {
+      margin-left: 0; /* Remove left margin */
+  }
+
+  footer p {
+      font-size: 1.5rem; /* Reduce footer font size */
+  }
 }
