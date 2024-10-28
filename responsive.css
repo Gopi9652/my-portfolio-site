@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+body, html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+#home{
+    font-size:2rem;
+}
+ul a{
+    text-decoration: none;
+}
+.sidebar a:hover::before {
+    content: "→ ";
+    color: orange;
+    
+}
+  
+.sidebar a:hover::after {
+    content: " ! ";
+    color: red;
+    transform: scale(1.03);
+}
+  
+p::first-letter {
+    font-size: 2em;
+    color: red;
+}
+.sidebar{
+    min-height: 100vh;
+}
+.content{
+    max-height: 100vh;
+    overflow-y: auto;
+    
+}
+.content::-webkit-scrollbar {
+    display: none;
+}
+#skills img {
+    width: 150px;
+    height: auto;
+}
+#skills figure:hover{
+    background-color: whitesmoke;
+    color: black;
+    transition: 1s;
+    border-radius: 1rem;
+    transform: scale(1.05);
+}
+body {
+    font-family: 'Raleway', sans-serif;
+}
+h1,h2 {
+    font-family: 'Playfair Display', serif;
+}
+
