@@ -13,17 +13,19 @@ body, html {
 ul a{
     text-decoration: none;
 }
-.sidebar a:hover::before {
-    content: "→ ";
-    color: orange;
-    
+@media screen and (min-width: 992px) {
+    .sidebar a:hover::before {
+        content: "→ ";
+        color: orange;
+    }
+
+    .sidebar a:hover::after {
+        content: " ! ";
+        color: red;
+        transform: scale(1.03);
+    }
 }
-  
-.sidebar a:hover::after {
-    content: " ! ";
-    color: red;
-    transform: scale(1.03);
-}
+
   
 p::first-letter {
     font-size: 2em;
