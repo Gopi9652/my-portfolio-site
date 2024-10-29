@@ -10,15 +10,15 @@
         <script src="bootstrap.js"></script>
         <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     </head>
-    <body class="container-fluid">
-        <div class="row d-flex">
+    <body>
+        <div class="container-fluid row">
 
             <!-- first container(side bar)-->
-            <div class="col-12 col-sm-4 col-lg-2 col-md-2 col-xl-2 row">
-                <div class="bg-dark text-light pr-3 text-center sidebar">
-                    <h2 class="font-weight-italic mb-5 mt-2 p-1">GOPI</h2>
+            <div class="col-sm-12 col-lg-2 col-md-1 col-xl-2 flex-fill mt-0 sidebar">
+                <div class="bg-dark text-light text-center sidebar">
+                    <h2 class="font-weight-italic">GOPI</h2>
                     <ul class="nav flex-column">
-                        <li class="nav-item p-1 text-uppercase">
+                        <li class="nav-item text-uppercase">
                         <a class="nav-link" href="#home">home</a>
                         </li>
                         <li class="nav-item p-1 text-uppercase">
@@ -42,27 +42,26 @@
 
             <!-- second container (main content)-->
 
-            <div class="container-fluid col-12 col-sm-7 col-lg-9 col-md-9 col-xl-9 m-1 text-light flex-fill mt-0 mb-0 row content">
+            <div class="container-fluid col-sm-12 col-lg-9 col-md-10 col-xl-9 m-1 text-light flex-fill mt-0 mb-0 row content flex-grow-1">
                  <!-- HOME -->
                 <div class="container d-flex mb-1 bg-dark lead" id="home">
-                    <div class="col-1"></div>
-                    <div class="col-6 col-sm-6 col-lg-6 col-md-6 col-xl-6 p-auto" id="home">
+                    <div class="col-sm col-lg col-md col-xl p-auto  m-md-5" id="home">
                         <p>HELLO !</p>
                         <h2 style="font-size: 2.6rem;"><span class="text-warning">I'm</span> Gopi <br> Thagulla</h2> 
                         <span>Python Full Stack Developer</span> <br> <br>
                         <a href="https://drive.google.com/file/d/1kj32rQnhjHrFDU_3rHERF4ntwqkNc6Nm/view?usp=sharing" target="_blank" download><button class="btn btn-warning font-weight-bold text-dark text-uppercase rounded-pill" type="button">resume</button></a>
                     </div>
-                    <div class="m-sm-auto m-md-auto">
+                    <div class="col-sm col-lg col-md col-xl">
                         <img src="https://res.cloudinary.com/dngn2hghx/image/upload/v1728401092/tn7rgujlnjup3mvl02te.png" alt="image" class="max-auto img-fluid">
                     </div>
                 </div>
                 <!-- ABOUT -->
                 <div class="container-fluid flex-fill bg-dark d-flex mb-1 lead" id="about">
     
-                    <div class="col-5 col-sm-5 col-lg-5 col-md-3 m-sm-auto m-md-auto">
+                    <div class="col-sm col-lg col-md">
                         <img src="https://res.cloudinary.com/dngn2hghx/image/upload/v1730056369/portfolio%20logos/no3zxz2v8bxziavwurla.png" alt="img" class="img-fluid max-auto">
                     </div>
-                    <div class="text-justify p-auto  col-5 col-sm-6 col-lg-5 col-md-7 flex-fill">
+                    <div class="text-justify p-auto  col-sm col-lg col-md">
                         <h1 class="text-uppercase text-warning">About Me</h1>
                         <p class="text-justify">Hello! I’m Gopi Thagulla, a passionate and driven Python full stack developer with a keen interest in building efficient and scalable web applications.   I have recently completed my B.Tech in stream of Computer Science & Engineering and am eager to apply my skills in a real-world environment.</p>
                         <br>
@@ -77,30 +76,30 @@
                 </div>
                 
                 <!-- education -->
-                <div class="container-fluid flex-fill bg-dark mb-1 lead p-5 pt-0"  id="education" >
+                <div class="container-fluid flex-fill bg-dark mb-1 lead"  id="education" >
                     <div class="text-uppercase text-center p-auto text-warning"><h1 class="text-center pb-4">Education</h1></div>
                     <div class="d-flex flex-row  p-auto">
-                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-auto mr-1">
+                        <div class="col-sm col-md col-lg p-auto">
                             <h3 class="text-uppercase">high school</h3><br>
                             <p>St'Joseph High School, <br>Rentachintala</p>
                             <span><b>CGPA : </b>8.0</span> <br>
                             <label for="per">80%</label> <br>
-                            <progress max="100" value="80" id="per" class="col-lg-8 col-md-10 col-12 mx-auto">80%</progress> <br>
+                            <progress max="100" value="80" id="per" class="col-lg-8 col-md-7 col-7 mx-auto">80%</progress> <br>
                         </div>
-                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-auto mr-1">
+                        <div class="col-sm col-md col-lg p-auto">
                             <h3 class="text-uppercase">Intermediate</h3> <br>
                             <p>Sri Chaitanya Junior College, <br> Guntur </p> 
                             <span><b>CGPA : 9.32</b></span> <br>
                             <label for="per">93%   </label> <br>
-                            <progress max="100" value="93" id="per" class="col-lg-8 col-md-10 col-12 mx-auto">93%</progress><br>
+                            <progress max="100" value="93" id="per" class="col-lg-8 col-md-7 col-7 mx-auto">93%</progress><br>
                         </div>
-                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 p-auto mr-1">
+                        <div class="col-sm col-md col-lg p-auto">
                             <h3 class="text-uppercase">b.tech</h3>
                             <b>(Computer Science & Engineering)</b>
                             <p>Narasaraopeta Institute Of Technology, <br> Narasaraopeta</p> 
                             <span><b>CGPA : </b>7.41</span> <br>
                             <label for="per">66%</label> <br>
-                            <progress id="per" max="100" value="66" class="col-lg-8 col-md-10 col-12 mx-auto">66%</progress><br>
+                            <progress id="per" max="100" value="66" class="col-lg-8 col-md-7 col-7 mx-auto">66%</progress><br>
                         </div>
                     </div>
                 </div>
@@ -109,7 +108,7 @@
                 <div class="container-fluid flex-fill lead bg-dark p-auto mb-1" id="skills">
                     <h1 class="text-warning text-uppercase text-center m-auto p-auto mt-1">skills</h1>
                     <div class="row text-center text-light d-flex flex-wrap flex-row m-auto p-auto pb-5">
-                        <figure class="col-3 m-auto  px-5 mt-5 p-3">
+                        <figure class="col-3 m-auto mt-5 p-3">
                             <img src="https://res.cloudinary.com/dngn2hghx/image/upload/v1728498028/portfolio%20logos/anw0hmrsxumcnqrpwezj.png" alt="Python" class="img-fluid">
                             <figcaption>Python</figcaption>
                         </figure>
@@ -160,16 +159,16 @@
                 <!--contact-->
                 <div class="container-fluid flex-fill lead bg-dark p-auto" id="contact">
                     <div class="row d-flex flex-row">
-                        <div class="col-6 col-sm-4 col-lg-6 col-md-4 m-sm-auto m-md-auto">
+                        <div class="col-sm col-lg col-md">
                             <img src="https://res.cloudinary.com/dngn2hghx/image/upload/v1729220908/portfolio%20logos/zvmzsp9qgl4ykqzqtrjo.png" alt="contact me" class="img-fluid max-auto">
                         </div>
-                        <div class="col-5 col-sm-7 col-lg-6 col-md-7 flex-fill text-justify">
+                        <div class="col-sm col-lg col-md ext-justify">
                             <h1 class="text-uppercase text-warning m-1 pb-5">Contact Me</h1>
                             <ul class="text-left" type="none">
-                                <li class="p-4 m-2 p-sm-2">Name: Gopi Thagulla</li>
-                                <li class="p-4 m-2 p-sm-2">Email: <a href="mailto:thagullagopi1@gmail.com">thagullagopi1@gmail.com</a></li>
-                                <li class="p-4 m-2 p-sm-2">Phone Number: 9705075545</li>
-                                <li class="p-4 m-2 p-sm-2">GitHub: <a href="https://github.com/Gopi9652" target="_blank">https://github.com/Gopi9652</a></li>
+                                <li class="p-4 m-1 p-sm-1">Name: Gopi Thagulla</li>
+                                <li class="p-4 m-1 p-sm-1">Email: <a href="mailto:thagullagopi1@gmail.com">thagullagopi1@gmail.com</a></li>
+                                <li class="p-4 m-1 p-sm-1">Phone Number: 9705075545</li>
+                                <li class="p-4 m-1 p-sm-1">GitHub: <a href="https://github.com/Gopi9652" target="_blank">https://github.com/Gopi9652</a></li>
                             </ul>
                             <div>
                                 <ul type="none" class="d-flex flex-row font-bold  ">
