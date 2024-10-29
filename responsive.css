@@ -13,37 +13,28 @@ body, html {
 ul a{
     text-decoration: none;
 }
-@media screen and (min-width: 992px) {
-    .sidebar a:hover::before {
-        content: "→ ";
-        color: orange;
-    }
-
-    .sidebar a:hover::after {
-        content: " ! ";
-        color: red;
-        transform: scale(1.03);
-    }
-}
-
   
 p::first-letter {
     font-size: 2em;
     color: red;
 }
-.sidebar{
+.sidebar1{
     min-height: 100vh;
+    overflow: hidden;
 }
-.content{
+.sidebar1::-webkit-scrollbar {
+    display: none;
+}
+.content1{
     max-height: 100vh;
     overflow-y: auto;
     
 }
-.content::-webkit-scrollbar {
+.content1::-webkit-scrollbar {
     display: none;
 }
 #skills img {
-    width: 150px;
+    width: 100px;
     height: auto;
 }
 #skills figure:hover{
@@ -58,5 +49,13 @@ body {
 }
 h1,h2 {
     font-family: 'Playfair Display', serif;
+}
+html {
+    font-size: 100%; /* Default 16px */
+}
+
+/* General text adjustments */
+body {
+    font-size: 1rem;
 }
 
