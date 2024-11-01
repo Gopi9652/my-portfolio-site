@@ -6,42 +6,69 @@
 body, html {
     overflow-x: hidden;
     scroll-behavior: smooth;
+    font-size: 20vw;
 }
-#home{
-    font-size:2rem;
+body {
+    font-family: 'Raleway', sans-serif;
+}
+h1,h2 {
+    font-family: 'Playfair Display', serif;
+}
+html {
+    font-size: 100%; /* Default 16px */
 }
 ul a{
     text-decoration: none;
 }
-.sidebar a:hover::before {
-    content: "→ ";
-    color: orange;
-    
-}
-  
-.sidebar a:hover::after {
-    content: " ! ";
-    color: red;
-    transform: scale(1.03);
-}
   
 p::first-letter {
-    font-size: 2em;
     color: red;
+    font-size: larger;
 }
-.sidebar{
+ul li a:hover::before{
+    content: "--> ";
+    color: azure;
+}
+ul li a:hover::after{
+    content: " | ";
+    color: azure;
+}
+.sidebar1{
     min-height: 100vh;
+    overflow: hidden;
 }
-.content{
+.sidebar1::-webkit-scrollbar {
+    display: none;
+}
+@media (max-width: 767.98px) {
+    .sidebar1 {
+        min-height: fit-content;
+        overflow: hidden;
+        overflow-x: hidden;
+    }
+    .sidebar1::-webkit-scrollbar {
+        display: none;
+    }
+    ul li a:hover::before{
+      display: none;
+    }
+    ul li a:hover::after{
+        display: none;
+    }
+    #about img{
+        display: none;
+    }
+}
+.content1{
     max-height: 100vh;
     overflow-y: auto;
     
 }
-.content::-webkit-scrollbar {
+.content1::-webkit-scrollbar {
     display: none;
 }
 #skills img {
-    width: 150px;
+    width: 100px;
     height: auto;
 }
 #skills figure:hover{
@@ -51,10 +78,6 @@ p::first-letter {
     border-radius: 1rem;
     transform: scale(1.05);
 }
-body {
-    font-family: 'Raleway', sans-serif;
-}
-h1,h2 {
-    font-family: 'Playfair Display', serif;
-}
+
+
 
