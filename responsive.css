@@ -44,6 +44,7 @@ ul li a:hover::after{
 .content1{
     max-height: 100vh;
     overflow-y: auto;
+    overflow-x: hidden;
     
 }
 .content1::-webkit-scrollbar {
